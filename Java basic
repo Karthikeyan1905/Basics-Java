@@ -15,4 +15,76 @@ hello world!
 
 Data types in java :
 1.primitive Data types
+a.byte
+b.short
+c.int
+d.long
+e.float
+f.double
+g.Boolean 
+h.char
 2.reference Data types
+-----------------------------------
+1.primitive Data types example program:
+
+public class hello_world {
+    public static void main(String[] args) {
+        int age = 18;
+
+        System.out.println(age);
+
+    }
+}
+Output:
+18
+-----------------------------------------
+public class hello_world {
+    public static void main(String[] args) {
+        
+        long age = 10000000000l;
+        System.out.println(age);
+
+    }
+}
+
+output:
+10000000000
+-----------------------------------------
+float in datatype:
+
+public class hello_world {
+    public static void main(String[] args) {
+        float mark = 95.5f;
+        System.out.println(mark);
+
+    }
+}
+output:
+95.5
+---------------------------------------------
+boolean :
+
+public class hello_world {
+    public static void main(String[] args) {
+        boolean presence = true;
+        System.out.println(presence);
+
+    }
+}
+output:
+true
+----------------------------------------------
+task:
+public class hello_world {
+    public static void main(String[] args) {
+        String a="code io";
+
+        System.out.println(a);
+        System.out.println(a.length());
+    }
+}
+
+output:
+code io
+7
+---------------------------------------------
