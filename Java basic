@@ -88,3 +88,23 @@ output:
 code io
 7
 ---------------------------------------------
+
+
+2.reference Data types
+A reference is like a pointer to memory. When an object is created from a class, Java allocates enough memory required to store the object.
+When the newly created object is assigned to a variable , the variable gets the value of the reference to the object , but not to the object itself.
+
+example for reference data type:
+
+import java.util.Date;
+public class hello_world {
+    public static void main(String[] args) {
+        int a = 10;
+        int b = a;
+        a = 5;
+        System.out.println(a);  //value is change   
+        System.out.println(b);
+        Date today = new Date();
+        System.out.println(today);
+    }
+}
