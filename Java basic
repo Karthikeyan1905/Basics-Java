@@ -91,6 +91,7 @@ code io
 
 
 2.reference Data types
+
 A reference is like a pointer to memory. When an object is created from a class, Java allocates enough memory required to store the object.
 When the newly created object is assigned to a variable , the variable gets the value of the reference to the object , but not to the object itself.
 
@@ -108,3 +109,179 @@ public class hello_world {
         System.out.println(today);
     }
 }
+----------------------------------------------------------
+
+-->Aritmetic operation (+,-,*,/,%)
+
+
+public class hello_world {
+
+    public static void main(String[] args) {
+        int a=10;
+        int b=4;
+
+        int c=a+b;
+        int d=a-b;
+        int e=a*b;
+        int g=a%b;
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        System.out.println(g);
+    }
+}
+output:
+14
+6
+40
+2
+----------------
+division eg program:
+
+public class hello_world {
+
+    public static void main(String[] args) {
+        int a=10;
+        int b=4;
+
+
+        float g=(float)a/(float)b;
+        System.out.println(g);
+
+    }
+}
+output:
+2.5
+-----------------------------------------------------------------
+
+Increment and Decrement operator in java:
+
+public class hello_world {
+
+    public static void main(String[] args) {
+        int a=10;
+        a++;
+
+        System.out.println(a);
+        a--;
+        System.out.println(a);
+
+        int b = 5;
+        System.out.println(b++);
+        System.out.println(b);
+        int c= 7;
+        System.out.println(c--);
+        System.out.println(c);
+    }
+}
+
+output:
+
+11
+10
+5
+6
+7
+6
+
+----------------------------------------------------------
+
+Relational operator in java:
+<   -lessthan
+>   -grater than
+>=  -greater than are equal to 
+<=  -less than are equal to 
+==  -equal to
+!=  -not equal to
+
+example code:
+public class hello_world {
+
+    public static void main(String[] args) {
+        int a=10;
+        int b=5;
+
+        System.out.println(a<b);
+        System.out.println(a<=b);
+        System.out.println(a>b);
+        System.out.println(a>=b);
+        System.out.println(a==b);
+        System.out.println(a!=b);
+
+    }
+}
+output:
+false
+false
+true
+true
+false
+true
+-------------------------------------------------------------------
+
+Logical operator in java:
+&& - and operator
+|| - or operator
+! - not operator
+
+precedence for logical operator:
+first --not
+2-second-and
+3 third - or
+------------------------------------------------
+eg code for not operator:! - not operator
+
+    public class hello_world {
+
+        public static void main(String[] args) {
+            boolean a = true;
+            boolean b = false;
+
+            System.out.println(!a);
+            System.out.println(!b);
+        }
+    }
+
+output:
+false
+true
+--------------
+eg code for or operator: ||
+
+    public class hello_world {
+
+        public static void main(String[] args) {
+            boolean a = true;
+            boolean b = false;
+            boolean c = false;
+            boolean d = false;
+
+            System.out.println(a||b);
+            System.out.println(c||b);
+        }
+    }
+output:
+true
+false
+---------------------
+eg code for and operator:&& 
+
+    public class hello_world {
+       public static void main(String[] args) {
+            boolean a = true;
+            boolean b = false;
+            boolean c = false;
+            boolean d = false;
+            boolean e = true;
+            boolean f = true;
+
+            System.out.println(a&&b);
+            System.out.println(c&&b);
+            System.out.println(e&&f);
+        }
+    }
+output:
+false
+false
+true
+---------------------------------
