@@ -285,3 +285,96 @@ false
 false
 true
 ---------------------------------
+
+Condtion statement in java:
+
+1.if statement 
+2.if else statement
+3.if else ladder statement
+4.nested if statement
+5.Switch statement
+----------------------------------
+1.if statement
+
+eg code;
+    public class hello_world {
+       public static void main(String[] args) {
+            boolean attendance = true;
+            if (attendance == true)
+            {
+                System.out.println("attending class");
+            }
+        }
+    }
+output:
+true
+
+------------------------------
+2.if else statement
+eg codeimport java.util.Scanner;
+
+    public class hello_world {
+        public static void main(String[] args) {
+        int age;
+            System.out.println("enter your age:");
+            Scanner in = new Scanner(System.in);
+            age=in.nextInt();
+            if(age>=18)
+            {
+                System.out.println("you are eligible for vote");
+            }
+            else{
+                System.out.println("you are not eligible for vote");
+            }
+
+
+        }
+    }
+outp
+enter your age:
+10
+you are not eligible for vote
+--------------------------------
+3.if else ladder statement
+
+eg code:
+    public class hello_world {
+        public static void main(String[] args) {
+        char attendance = 'O';
+            if (attendance  == 'P')
+            {
+                System.out.println("attending class");
+            }
+            else if(attendance == 'O')
+
+        {
+            System.out.println("on-duty");
+        }
+            else{
+                System.out.println("Not attending class");
+            }
+        }
+    }
+output:
+on-duty
+-------------------------------------
+4.nested if statement:
+eg code:
+        public class hello_world {
+        public static void main(String[] args) {
+        char attendance = 'p';
+        int present = 60;
+        if(attendance == 'p') {
+            if (present >= 50) {
+                System.out.println("classes start");
+            }
+        }
+            else{
+                System.out.println("classes cannot start.");
+            }
+        }
+    }
+output:
+    class start
+----------------------------------------
+
