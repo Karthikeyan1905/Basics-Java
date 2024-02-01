@@ -41,7 +41,7 @@ Output:
 public class hello_world {
     public static void main(String[] args) {
         
-        long age = 10000000000l;
+        long age = 10000000000L;
         System.out.println(age);
 
     }
@@ -110,6 +110,33 @@ public class hello_world {
     }
 }
 ----------------------------------------------------------
+type casting in java:
+widening casting:
+->byte->short->char->byte->int->long->float->double
+narrowing casting:
+->double->float->long->int->byte->char-.short-0>byte
+ import java.util.Scanner;
+   import java.util.*;
+    public class hello_world {
+        public static void main(String[] args) {
+        int a = 10;
+        double b = a,d=25.56;
+        int c = (int)d;
+
+            System.out.println("int :"+a);
+            System.out.println("double :"+b);
+            System.out.println("double :"+d);
+            System.out.println("int :"+c);
+
+
+        }
+    }
+output
+int :10
+double :10.0
+double :25.56
+int :25
+___________________________________________________________
 
 -->Aritmetic operation (+,-,*,/,%)
 
@@ -284,6 +311,31 @@ output:
 false
 false
 true
+__________________________________________________________________
+GETTING  INPUT SCANNER CLASS IN JAVA:
+
+eg code:
+   import java.util.Scanner;
+   import java.util.*;
+    public class hello_world {
+        public static void main(String[] args) {
+       int a,b,c;
+       Scanner in = new Scanner(System.in);
+            System.out.println("enter 2 no:");
+            a= in.nextInt();
+            b = in.nextInt();
+            c=(a*a)+(b*b)+(2*a*b);
+            System.out.println("result :"+c);
+
+
+        }
+    }
+output:
+ 
+enter 2 no:
+2
+23
+result :2025   
 ---------------------------------
 
 Condtion statement in java:
