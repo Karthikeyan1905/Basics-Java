@@ -11,7 +11,7 @@ public class hello_world {
 
 Output:
 hello world!
---------------------------------------------------
+____________________________________________________________________
 
 Data types in java :
 1.primitive Data types
@@ -24,7 +24,8 @@ f.double
 g.Boolean 
 h.char
 2.reference Data types
------------------------------------
+____________________________________________________________________
+
 1.primitive Data types example program:
 
 public class hello_world {
@@ -37,7 +38,8 @@ public class hello_world {
 }
 Output:
 18
------------------------------------------
+_____________________________________________________________________________
+
 public class hello_world {
     public static void main(String[] args) {
         
@@ -49,7 +51,8 @@ public class hello_world {
 
 output:
 10000000000
------------------------------------------
+________________________________________________________________________________________
+
 float in datatype:
 
 public class hello_world {
@@ -61,7 +64,7 @@ public class hello_world {
 }
 output:
 95.5
----------------------------------------------
+_______________________________________________________________
 boolean :
 
 public class hello_world {
@@ -73,7 +76,7 @@ public class hello_world {
 }
 output:
 true
-----------------------------------------------
+_______________________________________________________________________
 task:
 public class hello_world {
     public static void main(String[] args) {
@@ -87,8 +90,7 @@ public class hello_world {
 output:
 code io
 7
----------------------------------------------
-
+___________________________________________________________________________________
 
 2.reference Data types
 
@@ -109,7 +111,11 @@ public class hello_world {
         System.out.println(today);
     }
 }
-----------------------------------------------------------
+output:
+5
+10
+Fri Feb 02 22:38:02 IST 2024
+____________________________________________________________________
 type casting in java:
 widening casting:
 ->byte->short->char->byte->int->long->float->double
@@ -162,7 +168,7 @@ output:
 6
 40
 2
-----------------
+_________________________________________________________
 division eg program:
 
 public class hello_world {
@@ -179,7 +185,7 @@ public class hello_world {
 }
 output:
 2.5
------------------------------------------------------------------
+________________________________________________________________
 
 Increment and Decrement operator in java:
 
@@ -211,7 +217,7 @@ output:
 7
 6
 
-----------------------------------------------------------
+____________________________________________________________________
 
 Relational operator in java:
 <   -lessthan
@@ -244,7 +250,7 @@ true
 true
 false
 true
--------------------------------------------------------------------
+_______________________________________________________________
 
 Logical operator in java:
 && - and operator
@@ -255,7 +261,7 @@ precedence for logical operator:
 first --not
 2-second-and
 3 third - or
-------------------------------------------------
+_________________________________________________________
 eg code for not operator:! - not operator
 
     public class hello_world {
@@ -272,7 +278,7 @@ eg code for not operator:! - not operator
 output:
 false
 true
---------------
+_________________________________________________________________________
 eg code for or operator: ||
 
     public class hello_world {
@@ -290,7 +296,7 @@ eg code for or operator: ||
 output:
 true
 false
----------------------
+__________________________________________________
 eg code for and operator:&& 
 
     public class hello_world {
