@@ -460,45 +460,54 @@ ___________________________________________
 
 eg code:
    import java.util.Scanner;
-   import java.util.*;
-    public class hello_world {
-        public static void main(String[] args) {
-          int a,b,c,ch;
+import java.util.Date;
+public class hello_world {
+    public static void main(String[] args) {
+        int a,b,c,ch;
+        System.out.println("1.Addition");
+        System.out.println("2.subtraction");
+        System.out.println("3.multiplication");
+        System.out.println("4.Division");
+        System.out.println("Enter your choice:");
+        Scanner in = new Scanner(System.in);
+        ch=in.nextInt();
 
-            System.out.println("1.Addition");
-            System.out.println("2.subtraction");
-            System.out.println("3.multiplication");
-            System.out.println("4.Division");
-            System.out.println("Enter your choice:");
-            Scanner in = new Scanner(System.in);
-            ch=in.nextInt();
-            System.out.println("enter 2 nos:");
-            a=in.nextInt();
-            b=in.nextInt();
-            switch(ch)
-            {
-                case 1:
+        switch(ch)
+        {
+            case 1:
+                System.out.println("enter 2 nos:");
+                a=in.nextInt();
+                b=in.nextInt();
                 c=a+b;
                 System.out.println("addition:"+c);
                 break;
-                case 2:
-                    c=a-b;
-                    System.out.println("subtraction:"+c);
-                    break;
-                case 3:
-                    c=a*b;
-                    System.out.println("multiplication:"+c);
-                    break;
-                case 4:
-                    c=a/b;
-                    System.out.println("division:"+c);
-                    break;
-                default:
-                    System.out.println("invalid input");
-            }
-
+            case 2:
+                System.out.println("enter 2 nos:");
+                a=in.nextInt();
+                b=in.nextInt();
+                c=a-b;
+                System.out.println("subtraction:"+c);
+                break;
+            case 3:
+                System.out.println("enter 2 nos:");
+                a=in.nextInt();
+                b=in.nextInt();
+                c=a*b;
+                System.out.println("multiplication:"+c);
+                break;
+            case 4:
+                System.out.println("enter 2 nos:");
+                a=in.nextInt();
+                b=in.nextInt();
+                c=a/b;
+                System.out.println("division:"+c);
+                break;
+            default:
+                System.out.println("invalid input");
         }
+
     }
+}
 output:
 1.Addition
 2.subtraction
@@ -510,7 +519,212 @@ enter 2 nos:
 2345
 124
 multiplication:290780
+...........................
+--> Another output:
+1.Addition
+2.subtraction
+3.multiplication
+4.Division
+Enter your choice:
+5
+invalid input
+_____________________________________________________________
+
+group switch in java:
+
+eg code:
+
+import java.util.Scanner;
+import java.util.Date;
+public class hello_world {
+    public static void main(String[] args) {
+    char c;
+        System.out.println("enter a character:");
+        Scanner in = new Scanner(System.in);
+        c=in.next().charAt(0);
+        switch(c)
+        {
+            case'a':
+            case'e':
+            case'i':
+            case'o':
+            case'u':
+            case'A':
+            case'E':
+            case'I':
+            case'O':
+            case'U':
+                System.out.println(c + " is a vowel");
+                break;
+            default:
+                System.out.println(c +" is not a vowel");
+                break;
+
+
+        }
+    }
+}
+
+output:
+enter a character:
+i
+i is a vowel
+...................
+enter a character:
+k
+k is not a vowel
+
 ____________________________________________________________________________
+
+while loop in java:
+
+->while is a entry control loop
+
+eg code:
+import java.util.Scanner;
+import java.util.*;
+public class demo {
+    public static void main(String[] args) {
+        int n;
+        System.out.println("enter the limit:");
+        Scanner in=new Scanner(System.in);
+        n=in.nextInt();
+        int i=1;
+        while(i<=n)
+        {
+            System.out.println(i);
+            i++;
+        }
+    }
+}
+
+output:
+enter the limit:4
+1
+2
+3
+4
+__________________________________________________________________________________
+Do-while loop in java:
+
+->do-while is a exit contol loop .
+eg code:
+
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        int n;
+        int i=2;
+        System.out.println("enter the limit:");
+        Scanner in=new Scanner(System.in);
+        n=in.nextInt();
+        do
+            {
+                System.out.println(i);
+                i+=2;
+            }
+            while(i<=20);
+    }
+}
+
+output:
+enter the limit:20
+2
+4
+6
+8
+10
+12
+14
+16
+18
+20
+________________________________________________________________________________
+For loop using in java:
+
+print odd value upto 20 using for loop:
+
+eg code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        int n;
+        System.out.println("enter the limit:");
+        Scanner in=new Scanner(System.in);
+        n=in.nextInt();
+        for(int i=1;i<=n;i+=2)
+        {
+            System.out.println(i);
+        }
+    }
+}
+output:
+enter the limit:
+20
+1
+3
+5
+7
+9
+11
+13
+15
+17
+19
+_______________________________________________________________________
+
+Enhanced for loop in java:
+
+->It is easy to use .It does not have initialization, condition checking and increment or decrement.
+
+eg code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+     int number[] ={10,20,30,40,50};
+        for(int n:number)
+        {
+            System.out.println(n);
+        }
+    }
+}
+output:
+10
+20
+30
+40
+50
+__________________________________________________________________________
+
+Nested for loop in java:
+
+It is used to print patter and matric .
+
+eg code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+     for(int i=1;i<=5;i++)
+     {
+         for(int j=1;j<=i;j++)
+         {
+             System.out.print("*");
+         }
+         System.out.println("");
+     }
+    }
+}
+output:
+*
+**
+***
+****
+*****
+___________________________________________________________
 
 
 
