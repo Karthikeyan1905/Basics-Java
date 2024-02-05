@@ -726,6 +726,34 @@ output:
 *****
 ___________________________________________________________
 
+Break and Continue in java:
+
+This Statement is uses in looping statement for break the condition and continue the condition.
+eg code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        for(int i=1;i<=10;i++)
+        {
+            if(i==5)
+                continue;
+            System.out.println(i);
+            if(i==8)
+                break;
+        }
+    }
+}
+output:
+1
+2
+3
+4
+6
+7
+8
+______________________________________________________
+
 
 
 
