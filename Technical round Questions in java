@@ -1,0 +1,90 @@
+1.Write a program to find the factorial of given number.
+
+code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        int i,n;
+        System.out.println("enter the value for factorial:");
+        Scanner in = new Scanner(System.in);
+        n = in.nextInt();
+        int f=1;
+        for(i=1;i<=n;i++) {
+            f = f * i;
+        }
+            System.out.println("Factorial of "+ n+ " is"+f);
+    }
+}
+output:
+enter the value for factorial:
+5
+Factorial of 5 is120
+_______________________________________________________________________________
+
+2.write a program to find the sum and average of given n number.
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        int i,n;
+        System.out.println("enter the limit:");
+        Scanner in = new Scanner(System.in);
+        n = in.nextInt();
+        int sum=0,a;
+        for(i=1;i<=n;i++)
+        {
+            System.out.println("enter the number:"+i+":");
+            a=in.nextInt();
+            sum+=a;
+        }
+        System.out.println("the sum for given value is:"+sum);
+        System.out.println("the average for given value is:"+sum/n);
+    }
+}
+output:
+enter the limit:
+4
+enter the number:1:
+10
+enter the number:2:
+20
+enter the number:3:
+30
+enter the number:4:
+40
+the sum for given value is:100
+the average for given value is:25
+_______________________________________________________________________________
+3.Write a program to find the fibonacci series of given value.
+
+code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        int i,n;
+        System.out.println("Enter the number:");
+        Scanner in = new Scanner(System.in);
+        n=in.nextInt();
+        int a=-1,b=1,c;
+        for(i=1;i<=n;i++)
+        {
+            c=a+b;
+            System.out.println(c);
+            a=b;
+            b=c;
+        }
+
+    }
+}
+output:
+Enter the number:
+6
+0
+1
+1
+2
+3
+5
+______________________________________________________________________________
