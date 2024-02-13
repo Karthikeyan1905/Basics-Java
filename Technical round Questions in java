@@ -145,5 +145,100 @@ enter the number:
 153
 153is a armstrong number
 _______________________________________________________________________________________________________
+6.Write a program to print the multiplication tables.
+
+code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the table:");
+        int t = in.nextInt();
+        System.out.println("Enter the limit");
+        int n = in.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            System.out.println(t+"x"+i+"="+(t*i));
+        }
+    }
+}
+output:
+
+enter the table:
+8
+Enter the limit
+10
+8x1=8
+8x2=16
+8x3=24
+8x4=32
+8x5=40
+8x6=48
+8x7=56
+8x8=64
+8x9=72
+8x10=80
+__________________________________________________________________________________
+7.Write a program to find the factor of the given number.
+
+code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n = in.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+                System.out.println(i+" ");
+            }
+        }
+
+    }
+}
+output:
+enter the number:8
+1 
+2 
+4 
+8 
+____________________________________________________________________
+8.write a program to check the given number is prime or not.
+code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the number:");
+        int n = in.nextInt();
+       int f=0;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {
+               f++;
+            }
+        }
+        if(f==2)
+        {
+            System.out.println(n+" is a prime number ");
+        }
+        else{
+            System.out.println(n+"is not a prime number ");
+
+        }
+
+    }
+}
+output:
+enter the number:
+11
+11 is a prime number 
+__________________________________________________________________________________
 
 
