@@ -241,4 +241,203 @@ enter the number:
 11 is a prime number 
 __________________________________________________________________________________
 
+9.write a program to print the prime number between 1 to 999.
+code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int f = 0;
+        for (int n = 1; n <= 999; n++) {
+            for (int i = 1; i <= n; i++) {
+                if (n % i == 0){
+                    f++;
+            }
+        }
+        if (f == 2) {
+            System.out.println(n + "is a prime number");
+        }
+        f = 0;
+    }
+    }
+}
+output:
+2is a prime number
+3is a prime number
+5is a prime number
+7is a prime number
+11is a prime number
+13is a prime number
+17is a prime number
+19is a prime number
+23is a prime number
+29is a prime number
+31is a prime number
+37is a prime number
+41is a prime number
+43is a prime number
+47is a prime number
+53is a prime number
+59is a prime number
+61is a prime number
+67is a prime number
+71is a prime number
+73is a prime number
+79is a prime number
+83is a prime number
+89is a prime number
+97is a prime number
+101is a prime number
+103is a prime number
+107is a prime number
+109is a prime number
+113is a prime number
+127is a prime number
+131is a prime number
+137is a prime number
+139is a prime number
+149is a prime number
+151is a prime number
+157is a prime number
+163is a prime number
+167is a prime number
+173is a prime number
+179is a prime number
+181is a prime number
+191is a prime number
+193is a prime number
+197is a prime number
+199is a prime number
+211is a prime number
+223is a prime number
+227is a prime number
+229is a prime number
+233is a prime number
+239is a prime number
+241is a prime number
+251is a prime number
+257is a prime number
+263is a prime number
+269is a prime number
+271is a prime number
+277is a prime number
+281is a prime number
+283is a prime number
+293is a prime number
+307is a prime number
+311is a prime number
+313is a prime number
+317is a prime number
+331is a prime number
+337is a prime number
+347is a prime number
+349is a prime number
+353is a prime number
+359is a prime number
+367is a prime number
+373is a prime number
+379is a prime number
+383is a prime number
+389is a prime number
+397is a prime number
+401is a prime number
+409is a prime number
+419is a prime number
+421is a prime number
+431is a prime number
+433is a prime number
+439is a prime number
+443is a prime number
+449is a prime number
+457is a prime number
+461is a prime number
+463is a prime number
+467is a prime number
+479is a prime number
+487is a prime number
+491is a prime number
+499is a prime number
+503is a prime number
+509is a prime number
+521is a prime number
+523is a prime number
+541is a prime number
+547is a prime number
+557is a prime number
+563is a prime number
+569is a prime number
+571is a prime number
+577is a prime number
+587is a prime number
+593is a prime number
+599is a prime number
+601is a prime number
+607is a prime number
+613is a prime number
+617is a prime number
+619is a prime number
+631is a prime number
+641is a prime number
+643is a prime number
+647is a prime number
+653is a prime number
+659is a prime number
+661is a prime number
+673is a prime number
+677is a prime number
+683is a prime number
+691is a prime number
+701is a prime number
+709is a prime number
+719is a prime number
+727is a prime number
+733is a prime number
+739is a prime number
+743is a prime number
+751is a prime number
+757is a prime number
+761is a prime number
+769is a prime number
+773is a prime number
+787is a prime number
+797is a prime number
+809is a prime number
+811is a prime number
+821is a prime number
+823is a prime number
+827is a prime number
+829is a prime number
+839is a prime number
+853is a prime number
+857is a prime number
+859is a prime number
+863is a prime number
+877is a prime number
+881is a prime number
+883is a prime number
+887is a prime number
+907is a prime number
+911is a prime number
+919is a prime number
+929is a prime number
+937is a prime number
+941is a prime number
+947is a prime number
+953is a prime number
+967is a prime number
+971is a prime number
+977is a prime number
+983is a prime number
+991is a prime number
+997is a prime number
+_____________________________________________________________________________________
+
+
+
+
+
+
+
+
 
