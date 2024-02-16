@@ -432,9 +432,41 @@ output:
 991is a prime number
 997is a prime number
 _____________________________________________________________________________________
-
-
-
+10.Write a program to check the given number is perfect number or not.
+code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter a number:");
+        int n=in.nextInt();
+        int sum = 0;
+        for(int i=1;i<n;i++) {
+            if (n % i == 0)
+                sum += i;
+        }
+        if(sum==n)
+            {
+                System.out.println(n+" is a perfect number");
+            }
+        else
+        {
+            System.out.println(n+" is not a perfect number");
+        }
+    }
+}
+output:
+enter a number:
+6
+6 is a perfect number
+-----------------------------------
+not perfect output:
+enter a number:
+4
+4 is not a perfect number
+____________________________________________________________________________________________________________
+    
 
 
 
