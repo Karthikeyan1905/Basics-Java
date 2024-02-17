@@ -469,7 +469,49 @@ ________________________________________________________________________________
 11.Write a program to find the given number is strong number or not .    
 
 code:
+import java.util.Scanner;
+import java.util.*;
+public class basics {
+    public static void main(String[] args) {
+        int rem,sum=0,OriginalNum,fact;
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter a number:");
+        int num=in.nextInt();
+        OriginalNum=num;
+        while(num>0)
+        {
+            rem=num%10;
+            fact=1;
+            for(int i=1;i<=rem;i++)
+            {
+                fact*=i;
+            }
+            sum+=fact;
+            num=num/10;
+        }
+        if(sum == OriginalNum)
+        {
+            System.out.println(OriginalNum+"is a Strong number");
+        }
+        else {
+            System.out.println(OriginalNum+"is not a Strong number");
+        }
+    }
 
+}
+output:
+enter a number:
+145
+145 is  a Strong number
+    -------------
+enter a number:
+876
+876is not a Strong number
+___________________________________________________________________________________________________
+
+    
+    
+    
 
 
 
