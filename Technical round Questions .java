@@ -466,8 +466,9 @@ enter a number:
 4
 4 is not a perfect number
 ____________________________________________________________________________________________________________
-    
+11.Write a program to find the given number is strong number or not .    
 
+code:
 
 
 
