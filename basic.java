@@ -760,6 +760,96 @@ Array in java:
 Syntax:
      Datatype variable_name [ ] ;
     
+Eg Code:
+    
+import java.sql.Statement;
+import java.util.Scanner;
+import java.util.*;
 
+public class basics {
+    public static void main(String[] args) {
+        int a[] = {10, 20, 30, 40};
+        for (int i = 0; i < a.length; i++) {
+            System.out.println(a[i]);
+        }
+        System.out.println("_________________________________________");
+        for (int element : a) //Enhanced for loop
+        {
+            System.out.println(element);
+        }
+        System.out.println("_________________________________________");
+        int b[];//Declaring array
+        b=new int[10]; // Allocation memory to a=Array
+        int [] c = new int[10]; //combining both Statement
+                for(int element : b)
+                {
+                    System.out.println(element);
+
+                }
+                for(int i =0;i<10;i++)
+                {
+                    Scanner in=new Scanner(System.in);
+                    System.out.println("enter the number:");
+                    c[i]=in.nextInt();
+                }
+                for(int element :c)
+                {
+                    System.out.println(element);
+                }
+    }
+    }
+
+output :
+10
+20
+30
+40
+_________________________________________
+10
+20
+30
+40
+_________________________________________
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+enter the number:
+1
+enter the number:
+2
+enter the number:
+3
+enter the number:
+4
+enter the number:
+5
+enter the number:
+6
+enter the number:
+7
+enter the number:
+8
+enter the number:
+9
+enter the number:
+10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+_______________________________________________________________________________
 
 
