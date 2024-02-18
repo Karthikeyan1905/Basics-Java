@@ -728,7 +728,7 @@ ___________________________________________________________
 
 Break and Continue in java:
 
-This Statement is uses in looping statement for break the condition and continue the condition.
+This Statement is uses for looping statement for break the condition and continue the condition.
 eg code:
 import java.util.Scanner;
 import java.util.*;
@@ -754,7 +754,12 @@ output:
 8
 ______________________________________________________
 
+Array in java:
+    An array is a collection of elements of the same type placed in contiguous memory locations that can be individually referenced by using an index to a unique identifier.
 
+Syntax:
+     Datatype variable_name [ ] ;
+    
 
 
 
