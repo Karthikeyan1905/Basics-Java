@@ -840,6 +840,7 @@ enter the number:
 9
 enter the number:
 10
+    
 1
 2
 3
