@@ -508,9 +508,71 @@ enter a number:
 876
 876is not a Strong number
 ___________________________________________________________________________________________________
+12.To check the given number is palindrome or not:
+code:
+import java.util.Scanner;
+public class basics {
+    public static void main(String[] args){
+        int n,rem,reverse=0;
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the number:");
+        n=in.nextInt();
+        int a=n;
+     while(n!=0)
+     {
+         rem=n%10;
+         reverse=(reverse*10)+rem;
+         n=n/10;
 
-    
-    
+     }
+        System.out.println(reverse);
+        System.out.println(a);
+if(a==reverse)
+{
+    System.out.println("the number is palindrome");
+}
+else {
+    System.out.println("the number is not palindrome");
+}
+    }
+    }
+output:
+enter the number:
+121
+121
+121
+the number is palindrome
+    ____________________________
+    enter the number:
+824
+428
+824
+the number is not palindrom
+__________________________________________________________________________________________________
+13.Sorting number using array
+    code:
+import java.util.Scanner;
+public class basics {
+    public static void main(String[] args) {
+        int temp;
+        int[] arr = {10, 20, 54, 36, 41};
+        for (int i = 0; i < arr.length; i++) {
+            for(int j = i + 1; j < arr.length; j++) {
+                if(arr[i]>arr[j]){
+                        temp=arr[i];
+                        arr[i]=arr[j];
+                        arr[j]=temp;
+                                }
+
+            }
+            System.out.print(arr[i]+" ");
+        }
+    }
+}
+output:
+
+    10 20 36 41 54 
+    _________________________________________________________
     
 
 
