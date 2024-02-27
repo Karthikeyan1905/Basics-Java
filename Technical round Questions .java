@@ -613,8 +613,84 @@ public class basics {
     }
 }
 output:
+Enter the number of elements you want in array:
+3
+Enter 3 integers separated by space : 
+20
+10
+15
+ before sorting :20  |10  |15  | 
+ after sorting : 10|15|20|
+    __________________________________________________________________________________________________
+15.Write a program to count the even and odd number in an array.
+    code:
+import java.util.Scanner;
+public class basics {
+    public static void main(String[] args) {
+        int e=0,o=0;
+        Scanner in = new Scanner(System.in);
+        System.out.println("enter the limit:");
+        int n=in.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            System.out.println("enter the a["+i+"] value:");
+                    a[i]=in.nextInt();
+    }
+        for( int element:a)
+        {
+            if(element%2==0)
+            {
+                e++;
+            }
+            else {
+                o++;
+            }
+        }
+        System.out.println("Total even nos:"+e);
+        System.out.println("Total odd nos:"+o);
+    }
+}
+output:
+enter the limit:
+5
+enter the a[0] value:
+1
+enter the a[1] value:
+2
+enter the a[2] value:
+3
+enter the a[3] value:
+4
+enter the a[4] value:
+5
+Total even nos:2
+Total odd nos:3
+_______________________________________________________________________________
+ 16. Write aprogram to insert a element in specific index of an array.
+    code:
+import java.util.Scanner;
+import java.util.Arrays;
+public class basics {
+    public static void main(String[] args) {
+        int []a={10,20,30,40,50,60,70,80,90,100};
+        int index=2;
+        int value=25;
+        System.out.println("Before swapping:"+Arrays.toString(a));
+        for(int i=a.length-1;i>index;i--)
+        {
+            a[i]=a[i-1];
+        }
+        a[index]=value;
+        System.out.println("After swapping:"+Arrays.toString(a));
+    }
+}
+output:
+Before swapping:[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+After swapping:[10, 20, 25, 30, 40, 50, 60, 70, 80, 90]
+__________________________________________________________________________________________    
 
-
+    
 
 
 
