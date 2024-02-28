@@ -667,7 +667,7 @@ enter the a[4] value:
 Total even nos:2
 Total odd nos:3
 _______________________________________________________________________________
- 16. Write aprogram to insert a element in specific index of an array.
+ 16. Write a program to insert a element in specific index of an array.
     code:
 import java.util.Scanner;
 import java.util.Arrays;
@@ -689,8 +689,28 @@ output:
 Before swapping:[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 After swapping:[10, 20, 25, 30, 40, 50, 60, 70, 80, 90]
 __________________________________________________________________________________________    
+17.Write a program to find the duplicate element in array. 
+code:
+import java.util.Scanner;
+import java.util.Arrays;
+public class basics {
+    public static void main(String[] args) {
+        int []a={1,2,2,5,5,6,7,8,8};
+        for(int i=0;i<a.length -1;i++){
+            for(int j=i+1;j<a.length;j++){
+                if ((a[i]==a[j])&&(i!=j)){
+                    System.out.println("Duplicate value:"+a[j]);
+                }
+            }
+        }
+    }
+}
 
-    
-
+output:
+Duplicate value:2
+Duplicate value:5
+Duplicate value:8
+    ________________________________________________________________________
+18.
 
 
