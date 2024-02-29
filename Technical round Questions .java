@@ -711,6 +711,37 @@ Duplicate value:2
 Duplicate value:5
 Duplicate value:8
     ________________________________________________________________________
-18.
+18.Write a program to find the LCM for given two number.
+    package testing;
+
+import java.util.Scanner;
+
+public class Demo {
+	public static void main(String []args)
+	{  Scanner sc =new Scanner(System.in);
+		System.out.println("enter a two number: ");
+		int n1=sc.nextInt();
+		int n2=sc.nextInt();
+		int gcd=1;
+	    for(int i=1;i<=n1 && i<=n2;i++) {
+		  if(n1%i==0 && n2%i==0) {
+			  gcd=i;
+		  }
+		 
+	  }
+	  int lcm=n1*n2/gcd;
+	  System.out.println(gcd+"gcd");
+	  System.out.println(lcm+"lcm");
+		
+}
+	}
+
+output:
+enter a two number: 
+56
+45
+1 gcd
+2520 lcm
+
 
 
