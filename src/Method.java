@@ -28,3 +28,9 @@ public class Method {
         }
     }
 
+output:
+Add:30
+Sub:10
+Str Add:xyz
+add:40
+    
