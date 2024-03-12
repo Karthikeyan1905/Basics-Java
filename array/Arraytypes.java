@@ -32,3 +32,12 @@ public class Arraytypes {
 
     }
 }
+
+output:
+abc
+car
+ArrayList:[bike, car, truck, bus]
+ArrayList:bike
+[two wheeler, car, truck, bus]
+[two wheeler, car, bus]
+
