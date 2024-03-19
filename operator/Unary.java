@@ -51,4 +51,23 @@ public class Unary {
 
     }
 }
-
+output:
+Number = 20
+Result = -20
+------------------------
+Cond is: true
+Var1 = 10
+Var2 = 1
+Now cond is: false
+!(a < b) = true
+!(a > b) = false
+--------------------------------------
+11
+12
+13
+13
+14
+--------------------------------------
+First Number = 6
+6's bitwise complement = -7
+--------------------------------------
