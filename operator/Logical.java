@@ -13,3 +13,10 @@ public class Logical {
             System.out.println("!b: " + !b);
         }
 }
+output:
+a: true
+b: false
+a && b: false
+a || b: true
+!a: false
+!b: true
