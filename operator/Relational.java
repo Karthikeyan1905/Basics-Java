@@ -17,3 +17,10 @@ public class Relational {
     System.out.println("num1 != num2 is " + (num1 != num2));
 }
 }
+output:
+num1 > num2 is false
+num1 < num2 is true
+num1 >= num2 is false
+num1 <= num2 is true
+num1 == num2 is false
+num1 != num2 is true
