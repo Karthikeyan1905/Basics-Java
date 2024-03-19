@@ -2,7 +2,7 @@ package operator;
 
 public class Ternary {
     public static void main(String[] args) {
-        {
+        
             int a=10;
             String num = (a%2==0)?"even":"odd";
             System.out.println(num);
@@ -11,4 +11,6 @@ public class Ternary {
             System.out.println(d);
         }
     }
-}
+output:
+even
+15
