@@ -23,4 +23,14 @@ public class Bitwise {
         }
     }
 
-
+output:
+Enter first number: 4
+Enter second number: 8
+Bitwise AND: 0
+Bitwise OR: 12
+Bitwise XOR: 12
+Bitwise NOT: -5
+Bitwise Left Shift: 16
+Bitwise Right Shift: 1
+Bitwise Unsigned Right Shift: 1
+        
