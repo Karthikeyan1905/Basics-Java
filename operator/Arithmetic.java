@@ -15,3 +15,9 @@ public class Arithmetic {
 
     }
 }
+output:
+a + b = 13
+a - b = 7
+a * b = 30
+a / b = 3
+a % b = 1
